@@ -1,0 +1,52 @@
+html {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
+  margin: 0 1.5rem;
+}
+
+.header .logo {
+  flex-grow: 2;
+  height: 2rem;
+  width: auto;
+}
+
+.header nav span {
+  padding-left: 1rem;
+}
+
+    /*Logo*/
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+.name #one {
+  font-weight: bold;
+  color: darkgray;
+  text-transform: uppercase;
+}
+
+.name #two {
+  color: lightgray;
+  text-transform: uppercase;
+}
+
+
+/*Banner*/
+
+.banner {
+  background-color: gray;
+  height: 500px;
+}
