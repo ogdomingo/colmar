@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  line-height: 1.4;
   margin-top: 0;
   left: 0;
   right: 0;
@@ -50,7 +51,7 @@ body {
 
 .name #one {
   font-weight: bold;
-  color: darkgray;
+  color: #696969;
   text-transform: uppercase;
 }
 
@@ -62,7 +63,55 @@ body {
 
 /*Banner*/
 
-/*.banner {
-  background-color: gray;
-  height: 500px;
-}*/
+.banner {
+  background-color: lightgray;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 1.5rem;
+}
+
+.banner .image-content {
+  width: 60%;
+  height: auto;
+  padding-right: 3rem;
+}
+
+.banner .image-content img {
+  width: 100%;
+  height: auto;
+  padding-right: 1.5rem;
+}
+
+.banner .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.banner .text-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #404040;
+  line-height: 1.2;
+}
+
+.banner .text-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #404040;
+  line-height: 1.2;
+}
+
+.banner .text-content h4 {
+  color: white;
+  background-color: #696969;
+  padding: 0.5rem;
+  text-align: center;
+  width: 90%;
+}
