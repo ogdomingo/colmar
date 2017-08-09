@@ -1,16 +1,34 @@
 html {
   font-size: 16px;
   line-height: 1.4;
-  margin-top: 0;
+  margin: 0;
   left: 0;
   right: 0;
   font-family: "Lato";
+}
+
+p {
+  font-size: 0.75rem;
+  color: #404040;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #404040;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #404040;
 }
 
 body {
   margin: 0;
 }
 
+.container {
+  width: 100%;
+}
 
 /*Header*/
 
@@ -40,13 +58,11 @@ body {
 }
 
 .name {
-  flex-grow: 2;
-}
-
-.name {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-grow: 2;
+  text-transform: uppercase;
   font-size: 1.5rem;
   max-height: 4rem;
 }
@@ -54,12 +70,10 @@ body {
 .name #one {
   font-weight: 900;
   color: #696969;
-  text-transform: uppercase;
 }
 
 .name #two {
   color: lightgray;
-  text-transform: uppercase;
 }
 
 
@@ -105,9 +119,7 @@ body {
 }
 
 .banner .text-content h4 {
-  font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #404040;
   line-height: 1.2;
 }
 
@@ -120,4 +132,109 @@ body {
   text-align: center;
   width: 85%;
   font-family: "Lato";
+}
+
+/*Articles*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%; /*change this code later: add it to somewhere else*/
+  margin:
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Main Article*/
+
+.articles .big {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid lightgray;
+}
+
+.articles .big img {
+  width: 100%;
+}
+
+.articles .big h3 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: 900;
+}
+
+.articles .big p {
+  font-size: 1rem;
+  line-height: 1.4;
+  width: 85%;
+  padding-bottom: 2rem;
+}
+
+.articles .big h6 {
+  font-size: 0.9rem;
+}
+
+/*Small Articles Inside*/
+
+.articles .small {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1rem 0;
+}
+
+.small .article {
+  display: flex;
+}
+
+.small .article .text-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.small .article .image-content {
+  width: 35%;
+  height: auto;
+  max-height: 35%;
+  margin: 1rem 1rem;
+}
+
+.article .image-content img {
+  width: 100%;
+}
+
+.small .article .text-content {
+  width: 65%;
+}
+
+.article .text-content h4,
+.article .text-content p {
+  padding-bottom: 0.5rem;
+}
+
+.article .text-content h4 {
+  font-weight: 700;
+}
+
+.article .text-content p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+#read {
+  color: #6699ff;
+}
+
+.article.last {
+  background-color: lightgray;
 }
