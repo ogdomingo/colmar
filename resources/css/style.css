@@ -10,16 +10,22 @@ html {
 p {
   font-size: 0.75rem;
   color: #404040;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 h3 {
   font-size: 2.5rem;
   color: #404040;
+  font-weight: 900;
 }
 
 h4 {
   font-size: 1.5rem;
   color: #404040;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 
 body {
@@ -168,7 +174,6 @@ body {
 .articles .big h3 {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
-  font-weight: 900;
 }
 
 .articles .big p {
@@ -222,10 +227,6 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.article .text-content h4 {
-  font-weight: 700;
-}
-
 .article .text-content p {
   font-size: 1rem;
   line-height: 1.4;
@@ -237,4 +238,47 @@ body {
 
 .article.last {
   background-color: lightgray;
+}
+
+/*Courses*/
+
+.learning {
+  background-color: lightgray;
+}
+
+.learning h3 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 2rem 4.5rem;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  background-color: white;
+}
+
+.course .image-content {
+  width: 100%;
+  height: auto;
+}
+
+.course .image-content img {
+  width: 100%;
+}
+
+  /*Course Text-Content*/
+.course .text-content {
+  width: 85%;
+  padding: 1.25rem;
+  height: 100%;
 }
