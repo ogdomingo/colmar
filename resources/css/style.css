@@ -1,3 +1,4 @@
+
 html {
   font-size: 16px;
   line-height: 1.4;
@@ -5,6 +6,10 @@ html {
   left: 0;
   right: 0;
   font-family: "Lato";
+}
+
+body {
+  background-color: #f5f5f5;
 }
 
 p {
@@ -36,9 +41,14 @@ body {
   width: 100%;
 }
 
+.mobile {
+  display: none;
+}
+
+
 /*Header*/
 
-.header {
+.header .desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -52,7 +62,27 @@ body {
   color: dimgray;
 }
 
-    /*Logo*/
+/*Header-Mobile*/
+
+@media only screen and (max-width: 480px) {
+  .header .desktop {
+    display: none;
+  }
+
+  .header .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .header .mobile img {
+    height: 2.5rem;
+  }
+}
+
+
+  /*Logo*/
 
 .logo img {
   height: 3.5rem;
@@ -79,14 +109,14 @@ body {
 }
 
 .name #two {
-  color: lightgray;
+  color: rgb(223, 223, 10);
 }
 
 
 /*Banner*/
 
 .banner {
-  background-color: lightgray;
+  background-color: #DDD;
   flex-direction: row;
   width: 100%;
 }
@@ -140,6 +170,43 @@ body {
   font-family: "Lato";
 }
 
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    display: block;
+  }
+
+  .banner .content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .banner .image-content {
+    width: 100%;
+  }
+
+  .banner .text-content {
+    padding-left: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .banner .text-content h2 {
+    font-size: 2.5rem;
+    display: block;
+    margin: 2rem 0;
+  }
+
+  .banner .text-content h4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .banner .text-content h5 {
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+}
 /*Articles*/
 
 .container {
@@ -147,9 +214,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #f5f5f5;
   width: 100%; /*change this code later: add it to somewhere else*/
-  margin:
 }
 
 .articles {
@@ -164,7 +230,7 @@ body {
   flex-direction: column;
   width: 60%;
   padding: 2rem 1.5rem;
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #DDD;
 }
 
 .articles .big img {
@@ -223,6 +289,7 @@ body {
 }
 
 .article .text-content h4,
+
 .article .text-content p {
   padding-bottom: 0.5rem;
 }
@@ -233,17 +300,17 @@ body {
 }
 
 #read {
-  color: #6699ff;
+  color: #0F60B6;
 }
 
 .article.last {
-  background-color: lightgray;
+  background-color: #DDD;
 }
 
 /*Courses*/
 
 .learning {
-  background-color: lightgray;
+  background-color: #DDD;
 }
 
 .learning h3 {
@@ -280,5 +347,87 @@ body {
 .course .text-content {
   width: 85%;
   padding: 1.25rem;
-  height: 100%;
+}
+
+/*Exhibit*/
+
+.exhibit .container {
+  align-items: flex-start;
+  background-color: #f5f5f5;
+}
+
+.exhibit h3 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.column.main {
+  width: 60%;
+}
+
+.column.side {
+  width: 40%;
+}
+
+.column.side .item {
+  display: flex;
+  flex-direction: row;
+}
+
+.column.side img {
+  width: 100%;
+}
+
+.column.side .image-content {
+  width: 35%;
+  padding: 1rem;
+}
+
+.column.side .text-content {
+  width: 50%;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+  /*Top Side Item*/
+
+.column.side .item.gray {
+  background-color: #DDD;
+}
+
+.column.main {
+  margin: 2rem 1.5rem;
+  margin-top: 0;
+}
+
+.column.main h4 {
+  padding-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.column.main p {
+  padding-bottom: 2rem;
+}
+
+/*Footer*/
+
+footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  border-top: 1px solid #BEBEBE;
+  margin-bottom: 2rem;
+}
+
+footer span {
+  font-weight: 300;
+  padding: 0 0.5rem;
+  color: #585858;
+}
+
+#copyright {
+  flex-grow: 2;
 }

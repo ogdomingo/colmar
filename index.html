@@ -6,25 +6,34 @@
     <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
     <title>Colmar Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Saira:300,400,700,900" rel="stylesheet">
   </head>
   <body>
 
     <div class="header">
-      <div class="logo">
-        <div class="emblem">
-          <img src="./resources/images/ic-logo.svg" alt="">
+      <div class="desktop">
+        <div class="logo">
+          <div class="emblem">
+            <img src="./resources/images/ic-logo.svg" alt="">
+          </div>
         </div>
+        <div class="name">
+          <h4 id="one">Colmar</h4>
+          <h4 id="two">Academy</h4>
+        </div>
+        <nav>
+          <span>On campus</span>
+          <span>Online</span>
+          <span>For companies</span>
+          <span>Sign in</span>
+        </nav>
       </div>
-      <div class="name">
-        <h4 id="one">Colmar</h4>
-        <h4 id="two">Academy</h4>
+      <div class="mobile">
+        <img src="./resources/images/ic-logo.svg">
+        <img src="./resources/images/ic-on-campus.svg">
+        <img src="./resources/images/ic-online.svg">
+        <img src="./resources/images/ic-login.svg">
       </div>
-      <nav>
-        <span>On campus</span>
-        <span>Online</span>
-        <span>For companies</span>
-        <span>Sign in</span>
-      </nav>
     </div>
 
     <div class="banner">
@@ -146,10 +155,48 @@
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
-<!--
-    <div class="exhibit">
-
+      </div>
     </div>
-  -->
+
+    <div class="exhibit">
+      <h3>Thesis exhibit</h3>
+      <div class="container">
+        <div class="column main"> <!-- Change main and side to big small-->
+          <video width="100%" height="auto" controls>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+            Your Browser Does not Support the Video Tag!
+          </video>
+          <h4>Reimagine urban</h4>
+          <p>"Curabitur vitae libero ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        </div>
+        <div class="column side">
+          <div class="item gray">
+            <div class="image-content">
+              <img src="./resources/images/thesis-fisma.jpg">
+            </div>
+            <div class="text-content">
+              <h4>Fisma: Design and Prototype</h4>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="item white">
+            <div class="image-content">
+              <img src="./resources/images/thesis-now-and-then.jpg">
+            </div>
+            <div class="text-content">
+              <h4>Now and then</h4>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span id="copyright">© Colmar Academy. All rights reserved.</span>
+      <span>Terms</span>
+      <span>Privacy</span>
+    </footer>
+
   </body>
 </html>
