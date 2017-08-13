@@ -101,6 +101,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   max-height: 4rem;
+  font-family: "Lato";
 }
 
 .name #one {
@@ -109,7 +110,7 @@ body {
 }
 
 .name #two {
-  color: rgb(223, 223, 10);
+  color: rgba(223, 223, 10, 1);
 }
 
 
@@ -172,6 +173,11 @@ body {
 
 @media only screen and (max-width: 480px) {
 
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .banner {
     display: block;
   }
@@ -199,6 +205,7 @@ body {
 
   .banner .text-content h4 {
     margin-bottom: 1.5rem;
+    width: 95%;
   }
 
   .banner .text-content h5 {
@@ -207,6 +214,7 @@ body {
   }
 
 }
+
 /*Articles*/
 
 .container {
@@ -221,6 +229,37 @@ body {
 .articles {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 480px) {
+  .articles {
+    flex-direction: column;
+  }
+
+  .container .articles .big {
+    display: none;
+  }
+
+  .container .articles .small {
+    width: 100%;
+  }
+
+  .small .article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .small .article .image-content {
+    width: 90%;
+  }
+
+  .article .image-content img {
+    width: 100%;
+  }
+
+  .small .article.last {
+    background-color: inherit;
+  }
 }
 
 /*Main Article*/
@@ -343,6 +382,37 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 480px) {
+  .learning {
+    background-color: inherit;
+  }
+
+  .learning .courses {
+    display: none;
+  }
+
+  .learning .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .learning h3 {
+    margin-bottom: 1rem;
+  }
+
+  .learning .mobile .course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-bottom: 0.5rem;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #CCC;
+  }
+}
+
   /*Course Text-Content*/
 .course .text-content {
   width: 85%;
@@ -391,6 +461,24 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .exhibit .column.side {
+    display: none;
+  }
+
+  .exhibit .column.main {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .exhibit .column.main .text-content {
+    display: none;
+  }
+
+  .exhibit .column.main {
+    width: 100%;
+  }
+}
 
 
   /*Top Side Item*/
@@ -430,4 +518,16 @@ footer span {
 
 #copyright {
   flex-grow: 2;
+}
+
+@media only screen and (max-width: 480px) {
+  footer .left {
+    display: none;
+  }
+
+  footer {
+    margin: 0;
+    padding: 1rem;
+  }
+
 }
