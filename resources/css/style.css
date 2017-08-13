@@ -247,14 +247,28 @@ body {
   .small .article {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
-  .small .article .image-content {
-    width: 90%;
+  .small .image-content {
+    display: none;
   }
 
-  .article .image-content img {
+  .article img {
     width: 100%;
+    height: 12rem;
+  }
+
+  .articles .image-content-mobile {
+    display: flex !important;
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .small .article .text-content {
+    width: 90% !important;
+    padding-left: 1rem;
   }
 
   .small .article.last {
@@ -293,6 +307,10 @@ body {
 }
 
 /*Small Articles Inside*/
+
+.articles .image-content-mobile {
+  display: none;
+}
 
 .articles .small {
   display: flex;
