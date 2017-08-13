@@ -416,7 +416,7 @@ body {
   }
 
   .learning h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .learning .mobile .course {
@@ -429,6 +429,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #CCC;
+  }
+
+  .learning .mobile .course:hover {
+    background-color: rgba(223, 223, 10, 0.3);
+    color: #F2F2F2;
+    transition: color 100ms linear 0ms, background-color 100ms linear 0ms;
   }
 }
 
