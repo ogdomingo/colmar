@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: #f5f5f5;
+  margin: 0;
 }
 
 p {
@@ -31,10 +32,6 @@ h4 {
   color: #404040;
   font-weight: 700;
   padding-bottom: 0.5rem;
-}
-
-body {
-  margin: 0;
 }
 
 .container {
@@ -560,11 +557,48 @@ footer span {
 /*Interactive*/
 
 .banner .text-content h5:hover {
-  background-color: rgba(223, 223, 10, 0.5);
+  background-color: rgba(223, 223, 10, 1);
   color: #404040;
   transition: color 100ms ease-out 0s, background-color 100ms ease-out 0s;
 }
 
 .banner a {
   text-decoration: none;
+}
+
+.learning .course:hover {
+  background-color: rgba(223, 223, 10, 1);
+}
+
+.articles .article:hover {
+  background-color: rgba(223, 223, 10, 1);
+}
+
+.articles .article.last:hover {
+  background-color: #404040;
+}
+
+.articles .article.last .text-content:hover h4,
+.articles .article.last .text-content:hover p,
+.articles .article.last:hover p,
+.articles .article.last:hover h4 {
+  color: #DDD;
+}
+
+.articles .article.last .text-content:hover #readme,
+.articles .article.last:hover #readme {
+  color: #398EEA;
+}
+
+.exhibit .item.gray:hover  {
+  background-color: #404040;
+}
+
+.exhibit .item.gray:hover h4,
+.exhibit .item.gray:hover p {
+  color: #DDD;
+}
+
+.exhibit .item.white:hover {
+  background-color: rgba(223, 223, 10, 1);
 }
