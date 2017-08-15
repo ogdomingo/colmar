@@ -566,7 +566,7 @@ footer span {
   text-decoration: none;
 }
 
-/*
+
 .courses .course:hover {
   background-color: rgba(223, 223, 10, 1);
 }
@@ -591,6 +591,12 @@ footer span {
   color: #398EEA;
 }
 
+.articles .article:hover,
+.courses .course:hover,
+.exhibit .item:hover {
+  transition: background-color 800ms ease 100ms, color 700ms ease-out 100ms;
+}
+
 .exhibit .item.gray:hover  {
   background-color: #404040;
 }
@@ -603,4 +609,3 @@ footer span {
 .exhibit .item.white:hover {
   background-color: rgba(223, 223, 10, 1);
 }
-*/
